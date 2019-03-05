@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".SignupActivity">
+    <!--android:background="#283593"-->
+
+
+    <!-- Login progress -->
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/app_bgd" />
+
+
+    <RelativeLayout
+        android:id="@+id/login_form"
+        android:layout_width="wrap_content"
+        android:layout_height="361dp"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:lineSpacingExtra="14sp"
+            android:text="Register with Us"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:text="Register with Us" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="71dp"
+            android:background="@drawable/edittext_shape"
+            android:drawableLeft="@drawable/ic_mail_black_24dp"
+            android:ems="10"
+            android:foregroundGravity="center"
+            android:hint="  Username"
+            android:inputType="textEmailAddress|textPersonName"
+            android:padding="16dp"
+            tools:padding="12dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="147dp"
+            android:background="@drawable/edittext_shape"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:ems="10"
+            android:foregroundGravity="center"
+            android:hint=" Password"
+            android:inputType="text"
+            android:padding="@dimen/activity_horizontal_margin"
+            tools:padding="10dp" />
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="222dp"
+            android:background="@drawable/edittext_shape"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:ems="10"
+            android:foregroundGravity="center"
+            android:hint=" Confirm Password"
+            android:inputType="text"
+            android:padding="@dimen/activity_horizontal_margin"
+            tools:padding="10dp" />
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="310dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rectangle_green"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Sign Up"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="#FFFFFF"
+            android:textSize="27sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".LoginActivity">
+    <!--android:background="#283593"-->
+
+
+    <!-- Login progress -->
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/app_bgd" />
+
+    <RelativeLayout
+        android:id="@+id/login_form"
+        android:layout_width="wrap_content"
+        android:layout_height="391dp"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="115dp"
+            android:layout_height="108dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:foregroundGravity="center"
+            app:srcCompat="@drawable/app_logo" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_shape"
+            android:drawableLeft="@drawable/ic_mail_black_24dp"
+            android:ems="10"
+            android:foregroundGravity="center"
+            android:hint="  Username"
+            android:inputType="textEmailAddress|textPersonName"
+            android:padding="16dp"
+            tools:padding="12dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="89dp"
+            android:background="@drawable/edittext_shape"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:ems="10"
+            android:foregroundGravity="center"
+            android:hint=" Password"
+            android:inputType="textPassword"
+            android:padding="@dimen/activity_horizontal_margin"
+            tools:padding="10dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/signin_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:background="#0277BD"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/signin"
+            android:layout_weight="1"
+            android:background="#DD2C00"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Sign Up"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
